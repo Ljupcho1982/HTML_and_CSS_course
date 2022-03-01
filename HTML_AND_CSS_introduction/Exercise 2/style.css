@@ -1,0 +1,49 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 6px;
+    
+    
+            }
+            
+    .textred {
+        color:red;
+    }
+
+    #firstP{
+        color:blue; 
+        text-decoration:line-through;
+    }
+
+    h1::first-letter {
+        color:green;
+    }
+    button{
+        cursor:pointer;
+    }
+    a:link, a:visited{
+        color: deepskyblue;
+        text-decoration: none;
+    }
+
+    a:hover, a:active {
+        color:hotpink;
+        text-decoration: dashed underline;
+    }
+    ul {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: block;
+        padding: 16px;
+    }
+    
+    ul.primary li:nth-child(3n-1) {
+        background: skyblue;
+        color: white;
+        font-weight: bold;
+    }
