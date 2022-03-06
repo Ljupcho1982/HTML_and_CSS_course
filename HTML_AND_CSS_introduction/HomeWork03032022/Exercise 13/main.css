@@ -1,0 +1,28 @@
+body {
+
+    background-color: black;
+    font-family: sans-serif;
+    color: white;
+}
+
+a {
+    color: hotpink;
+
+}
+table, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding:10px;
+
+}
+.language {
+    background-color: purple;
+    font-weight:bold;
+
+}
+
+#aloha{
+    letter-spacing: 8px;
+    font-variant: small-caps;
+    background-color: green;
+}
