@@ -1,0 +1,37 @@
+body {
+
+    background-color: black;
+    font-family: sans-serif;
+    color: #fff3e3;
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+a {
+    color: #ffb985;
+
+}
+
+h1 {
+    color: #ae7182;
+}
+table, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding:10px;
+
+}
+th {
+    border: 1 px solid #fff3e3;
+}
+.language {
+    background-color:#262b53;
+    font-weight:bold;
+
+}
+
+#aloha{
+    letter-spacing: 8px;
+    font-variant: small-caps;
+    background-color: green;
+}
