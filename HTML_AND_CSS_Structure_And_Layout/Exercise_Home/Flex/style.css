@@ -28,15 +28,11 @@ div {
   box-sizing: border-box;
   padding: 15px;
 }
-.mainFlex {
-  display: flex;
-  flex-flow: column;
+div {
+  display: gird;
+  grid-template-columns: 1fr 2fr 3fr 4fr;
 }
 
 footer {
   margin-top: 400px;
-}
-
-#product1 {
-  align-items: stretch;
 }
