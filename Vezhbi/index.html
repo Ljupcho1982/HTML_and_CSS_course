@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <style>
+   header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+nav ul,
+.breadcrumb ol {
+  display: flex;
+  list-style-type: none;
+}
+
+.breadcrumb li {
+    padding: 15px;
+}
+
+nav a {
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb ol li:after {
+  content: "/"; 
+}
+
+    </style>
+</head>
+<body>
+    
+    <header>
+
+        <img src="https://dummyimage.com/100x100/7EC0EE/000&text=Product+Image+1" alt="">
+
+   <nav>
+<ul>
+<li><a href="#">Videos to rent</a></li>
+<li><a href="#">Video to buy</a></li>
+<li><a href="#">Used Video</a></li>
+<li><a href="#">Offers</a></li>
+
+
+</ul>
+
+
+
+    </nav>
+    </header>
+    <section class="breadcrumb">
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Used DVDs</a></li>
+            <li><a href="#">Less than $10</a></li>
+    
+        </ol>
+    
+       </section>
+
+
+
+
+</section>
+
+ 
+</body>
+</html>
