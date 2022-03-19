@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property sale form</title>
+
+    <style>
+fieldset {
+
+    border: 0;
+    padding: 0;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+label span {
+
+    color: red;
+}
+
+input, select {
+
+    border: 1px solid gray;
+    padding: 10px;
+    width: 200px;
+}
+
+select {
+
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #666;
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+.property-atributes {
+
+    position: relative;
+    width: 222px;
+}
+.property-atributes {
+    display: flex;
+
+}
+
+.property-atributes {
+
+    display: flex;
+    margin: 10px;
+}
+
+select:valid {
+    border: 2px solid green;
+}
+
+select:invalid {
+    border: 2px solid red;
+
+}
+
+button {
+    background: green;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+    border-radius:5px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Property for sale in London</h1>
+
+    <form action="" method="post">
+     <fieldset>
+
+<div class="property-atributes">
+<div>
+<label for="search radius">Search Radius: <span>*</span></label>
+<select name="search_radius" id="search_radius">
+    <option value="any" name="option">Any</option>
+    <option value="hitrow">Hitrow</option>
+    <option value="windsor">Windsor</option>
+    <option value="east london">East London</option>
+    <option value="west london">West London</option>
+</div>
+</select>
+<div>
+<label for="price range">Price range: <span>*</span></label>
+<select name="price_range" id="price_range">
+    <option value="any">Any</option>
+    <option value="1000">1000</option>
+    <option value="2000">2000</option>
+    <option value="3000">3000 London</option>
+    <option value="west london">West London</option>
+</div>
+</select>
+<div>
+<label for="bedrooms">Bedrooms: <span>*</span></label>
+<select name="bedrooms" id="bedroom">
+    <option value="any">Any</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+</div>
+</select>
+
+<div>
+    <label for="property_type">Property type: <span>*</span></label>
+    <select name="property_type" id="property_type">
+        <option value="any">Any</option>
+        <option value="private">1</option>
+        <option value="state">2</option>
+        <option value="concession">3</option>
+        <option value="mixed">4</option>
+    </div>
+    </select>
+    <div>
+        <label for="added to site">Added to site: <span>*</span></label>
+        <select name="added to site" id="added_to_site">
+            <option value="any">Any</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </div>
+        </select>
+<div>
+
+    <input type="checkbox" name="checkbox">
+    <label for="checkbox">Included sold Property</label>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<button type="submit">Find Property</button>
+
+
+
+        </fieldset>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
