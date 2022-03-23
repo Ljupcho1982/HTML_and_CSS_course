@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    table, td {
+
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body style="background-color: orange;">
+    
+    <h1 style="background-color: yellow; display: block;">This heading has a yellow color</h1><br>
+    <h2 style="background-color: white; display: block;">This heading has a white background</h2><br>
+    <p style="background-color:pink;">This a paragraph with a pink color</p>
+
+    <table style=" background-color: yellow;">
+<tr>
+<td>This table has</td>
+<td>Set a background color</td>
+
+</tr>
+
+<tr>
+<td>a yellow background</td>
+<td>for a table just like you would for any other element</td>
+
+</tr>
+
+
+    </table>
+
+</body>
+</html>
