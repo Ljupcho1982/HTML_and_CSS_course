@@ -1,146 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wine Order Formular</title>
 
     <style>
-.contactus {
-    padding: 15px;
-    background: yellow;
-    color: gray;
-    margin-bottom: 10px;
+      .contactus {
+        padding: 15px;
+        background: yellow;
+        color: gray;
+        margin-bottom: 10px;
+      }
+      input:valid {
+        border: 2px solid green;
+      }
 
+      input:invalid {
+        border: 2px solid red;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
 
-}
-input:valid {
+      .checkbox {
+        display: flex;
+        padding: 20px;
+        column-gap: 20px;
+        background: blue;
+      }
 
-    border: 2px solid green;
+      .writetous {
+        background: pink;
+      }
+      .order {
+        background: rgb(51, 255, 0);
+      }
 
-    
-}
+      fieldset {
+        width: 250px;
+      }
 
-input:invalid {
+      form {
+        float: right;
+      }
 
-    border: 2px solid red;
-}
-label {
-    display: block;
-    margin-bottom: 10px;
-
-}
-
-.checkbox {
-    display: flex;
-    padding: 20px;
-    column-gap: 20px;
-    background: blue;
-    
-}
-
-.writetous {
-
-    background: pink;
-
-}
-.order {
-
-    background: rgb(51, 255, 0);
-
-    
-}
-
-fieldset {
-    width: 250px;
-}
-
-form {
-    float: right;
-}
-
-.submit {
-
-
-
-    background: greenyellow;
-    text-transform: uppercase;
-    border: none;
-    width: 70px;
-    border-radius: 5px;
-    margin-left: 100px;
-}
-
-
+      .submit {
+        background: greenyellow;
+        text-transform: uppercase;
+        border: none;
+        width: 70px;
+        border-radius: 5px;
+        margin-left: 100px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <form action="" method="post">
-<fieldset>
+      <fieldset>
+        <h1>Order your wine</h1>
 
-<H1>Order your wine</H1>
+        <div class="order">
+          <select name="wine" id="wine">
+            <option value="vrance">Vranec</option>
+            <option value="temjanika">temjanika</option>
+            <option value="kratoshija">kratoshija</option>
+            <option value="riziling">Rizling</option>
+          </select>
+        </div>
 
-<div class="order">
+        <div class="checkbox">
+          <label for="delivery">Shipping via Cargo</label>
+          <input type="checkbox" name="delivery" id="checkbox" /><br />
+          <label for="pickup">Pickup personaly</label>
+          <input type="checkbox" name="pickup" id="pickup" />
+        </div>
 
-<select name="wine" id="wine">
+        <div class="contactus">
+          <label for="name">Enter your <name:span>*</name:span></label>
+          <input type="text" id="name" name="name" required /> <br />
+          <label for="last_name">Enter your last name: <span>*</span></label>
+          <input type="text" name="last_name" id="last_name" required /><br />
+          <label for="address">Addres</label>
+          <input type="text" name="addres" id="address" maxlength="20" /><br />
+          <label for="email">Enter your e-mail: <span>*</span></label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-<option value="vrance">Vranec</option>
-<option value="temjanika">temjanika</option>
-<option value="kratoshija">kratoshija</option>
-<option value="riziling">Rizling</option>
+        <div class="writetous">
+          <label for="writetous">Write to us </label>
 
-</select>
+          <textarea name="writetous" id="writetous" cols="30" rows="10">
+Write</textarea
+          >
+        </div>
+      </fieldset>
 
-</div>
-
-<div class="checkbox">
-<label for="delivery">Shipping via Cargo</label>
-<input type="checkbox" name="delivery" id="checkbox"><br>
-<label for="pickup">Pickup personaly</label>
-<input type="checkbox" name="pickup" id="pickup">
-
-
-
-</div>
-
-<div class="contactus">
-
-<label for="name">Enter your <name:span>*</name:span></label>
-<input type="text" id="name" name="name" required> <br>
-<label for="last_name">Enter your last name: <span>*</span></label>
-<input type="text" name="last_name" id="last_name" required><br>
-<label for="address">Addres</label>
-<input type="text" name="addres" id="address" maxlength="20"><br>
-<label for="email">Enter your e-mail: <span>*</span></label>
-<input type="email" name="email" id="email" required>
-
-
-
-
-
-</div>
-
-
-<div class="writetous">
-
-<label for="writetous">Write to us </label>
-
-<textarea name="writetous" id="writetous" cols="30" rows="10">Write</textarea>
-
-
-</div>
-</fieldset>
-
-
-<button type="submit" name="submit" class="submit">Submit</button>
-
-
-
-
+      <button type="submit" name="submit" class="submit">Submit</button>
     </form>
 
-    <H1>Find us on map</H1>
-    <iframe src="https://share.here.com/p/s-Yz1idWlsZGluZztsYXQ9NDEuNDI4OTg7bG9uPTIyLjAxMTM1O249VWxpY2ErWmFkcnVnYXJza2ErMTA7bmxhdD00MS40Mjg4OTtubG9uPTIyLjAxMTQzO2g9MjIwNTAw" height="400" width="600"></iframe>
-</body>
+    <h1>Find us on map</h1>
+    <iframe
+      src="https://share.here.com/p/s-Yz1idWlsZGluZztsYXQ9NDEuNDI4OTg7bG9uPTIyLjAxMTM1O249VWxpY2ErWmFkcnVnYXJza2ErMTA7bmxhdD00MS40Mjg4OTtubG9uPTIyLjAxMTQzO2g9MjIwNTAw"
+      height="400"
+      width="600"
+    ></iframe
+    ><br />
+    <a href="download/dowload.dpf" download="">dowload me</a>
+
+    <dl>
+      <dt>Ljupcho</dt>
+      <dd>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, inventore.
+        Similique a esse, unde quia veniam perferendis earum accusamus assumenda
+        obcaecati rerum, beatae magnam fugiat illo sit modi ab molestias!
+      </dd>
+    </dl>
+  </body>
 </html>
