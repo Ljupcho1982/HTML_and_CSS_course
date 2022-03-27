@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 10</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <hr style="border: solid 1px" />
+
+      <label style="font-weight: bold" for="color"
+        >A form to set a user preference for links:</label
+      >
+      <br />
+      <label for="links">Chose a color for links:</label><br />
+      <br />
+      <select name="colors" id="colors">
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="gay">Gray</option>
+        <option value="orange">Orange</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button> <br />
+
+      <label style="font-weight: bold" for="forum">
+        A form used to registe a user to a forum:</label
+      >
+      <fieldset>
+        <legend>Register now</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" /> <br />
+        <label for="email">Email:</label>
+        <input type="email" name="name" /><br />
+
+        <br />
+        <label for="use"
+          >Which web browser do you use? (Check all that apply)</label
+        >
+        <br />
+        <input type="checkbox" name="Firefox" />
+        <label for="Firefox">Firefox</label><br />
+        <input type="checkbox" name="Chrome" />
+        <label for="Chrome">Chrome</label><br />
+        <input type="checkbox" name="Opera" id="Opera" />
+        <label for="Opera">Opera</label><br />
+        <input type="checkbox" name="Safari" id="Safari" />
+        <label for="Safari">Safari</label><br />
+        <input type="checkbox" name="Internet Explorer" />
+        <label for="Internet Explorer">Internet Explored</label><br />
+        <input type="checkbox" name="Other" />
+        <label for="Other">Other</label>
+        <br />
+        <label for="signature">Enter a forum signature:</label><br />
+        <textarea name="" id="" cols="30" rows="20"></textarea><br />
+        <label for="password">Choose a password:</label>
+        <input type="password" /><br />
+        <label for="re-password">Re-type password</label>
+        <input type="text" name="re-password" id="" /><br />
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
