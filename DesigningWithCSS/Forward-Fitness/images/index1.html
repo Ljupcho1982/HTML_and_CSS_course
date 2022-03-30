@@ -15,6 +15,23 @@
       .image:hover {
         list-style-image: url("/arrow2.png");
       }
+
+      p {
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -25,5 +42,10 @@
       <br />
       <li class="image">dfds</li>
     </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, saepe
+      est aliquam modi qui quidem excepturi, quia dolore architecto fugit vel
+      aut praesentium commodi vero pariatur vitae adipisci, similique debitis.
+    </p>
   </body>
 </html>
