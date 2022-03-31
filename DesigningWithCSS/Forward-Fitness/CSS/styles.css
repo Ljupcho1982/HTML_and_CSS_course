@@ -1,29 +1,78 @@
-body,
-header,
-nav,
-main,
-footer,
-h1,
-div,
-img {
+
+/* Author:Ljupcho Shemov, Date:31.03.2022, Filename:style.css*/
+/* CSS Reset*/
+
+* {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+/* Style rules for body and images*/
+
 body {
-  background-color: #ccc;
-}
-header {
-  float: left;
-  width: 25%;
+
+  background-color:#000;
+
 }
 
-nav {
-  float: right;
-  margin: 5em 3em 0 0;
-  width: 70%;
+img {
+  max-width: 100%;
+  display: block;
 }
+
+/* Style rules for mobile viewport*/
+
+
+/* Style rules for header*/
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  height: 190px;
+  z-index: 1;
+
+}
+header img {
+
+  margin: 0 auto;
+}
+
+/* Style rules for navigation area*/
+
+nav {
+padding: 1%;
+margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+   text-align: center;
+   font-family: 'Francois One', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+
+nav li {
+ 
+  font-size: 1.75em;
+  border-top: 1px solid #fff;
+ /* font-family: 'Roboto Slab', serif;*/
+ font-family: 'Francois One', sans-serif;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: 0;
+}
+
+/* Style rules for main content*/
 
 main {
   clear: left;
@@ -41,29 +90,7 @@ h1 {
   margin: 0 auto;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  text-align: right;
-}
 
-nav li {
-  display: inline-block;
-  font-size: 1.75 em;
-}
-
-nav li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 0.5em 1em;
-  text-decoration: 0;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
 
 #hero {
   clear: both;
@@ -76,12 +103,7 @@ div h2 {
   margin-left: 30px;
 }
 
-footer p {
-  font-size: 0.75em;
-  text-align: center;
-  color: #fff;
-  padding: 0.1em;
-}
+
 footer p a {
   color: #fff;
   text-decoration: none;
@@ -132,4 +154,13 @@ footer p a {
 
 .map {
   border: 8px solid #000;
+}
+
+/* Style rules for footer content */
+
+footer p {
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+  padding: 0.1em;
 }
